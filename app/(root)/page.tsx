@@ -1,6 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Metadata } from "next";
 import React from "react";
+import { Metadata } from "next";
+import sampleData from "@/db/sample-data";
+import ProductList from "@/components/shared/products/product-list";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -10,8 +11,7 @@ export const metadata: Metadata = {
 function HomePage() {
   return (
     <div>
-      <h3 className="h3-bold">HomePage</h3>
-      <Button size="lg">Click Me</Button>
+      <ProductList data={sampleData.products} title="New Products" limit={4} />
     </div>
   );
 }
