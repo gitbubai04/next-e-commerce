@@ -3,9 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import ProductPrice from "./product.-price";
+import { Products } from "@/types";
 
 type Props = {
-  product: any;
+  product: Products;
 };
 
 const ProductCard: React.FC<Props> = ({ product }) => {

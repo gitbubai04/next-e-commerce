@@ -1,8 +1,9 @@
 import React from "react";
 import ProductCard from "./product-card";
+import { Products } from "@/types";
 
 type Props = {
-  data: any[];
+  data: Products[];
   title?: string;
   limit?: number;
 };
